@@ -1,0 +1,22 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorBtnCmd">
+
+
+    <item>
+        <shape android:shape="rectangle">
+
+
+            <solid android:color="#008000">
+            </solid>
+
+            <size android:height="80dp"
+                android:width="80dp">
+
+            </size>
+
+            <corners android:radius="40dp"/>
+
+        </shape>
+    </item>
+
+</ripple>

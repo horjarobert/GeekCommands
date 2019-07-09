@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".linux"
+
+    android:id="@+id/linux_layout"
+    android:background="#000"
+    >
+
+
+    <!-- START LinearLayout strongBackup -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        >
+        <!-- START | info | day | night -->
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="#000"
+            android:layout_alignParentTop="true"
+
+            >
+
+            <!-- START info -->
+
+
+            <Button
+                android:id="@+id/linux_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="$_"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/linux_background_linuxpage"
+                android:onClick="appearTitle"
+                />
+
+            <!--END info -->
+
+
+            <!-- START title -->
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:fontFamily="@font/aclonica"
+                android:text="LINUX commands"
+                android:textColor="#008000"
+                android:gravity="center"
+
+                android:textSize="15sp"
+                android:visibility="invisible"
+                android:onClick="goMain"
+                />
+
+
+            <!-- END title -->
+
+            <!-- START day-night -->
+
+
+            <ImageView
+                android:id="@+id/day_app"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@raw/day_sun"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/night_app"
+                android:layout_width="27dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@raw/moon_stars"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+
+
+                />
+
+            <!-- END day-night -->
+
+
+
+        </RelativeLayout>
+
+        <!-- END | info | day | night -->
+
+
+
+        <!-- START cardView -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <GridLayout
+                android:id="@+id/grid_layout"
+                android:columnCount="1"
+                android:rowCount="16"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <!-- START row 1 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_1"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay1_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/aclonica"
+                            android:text="alias"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 2 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_2"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay2_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="apg"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 3 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_3"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay3_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_3"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="cal"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 4 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_4"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay4_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_4"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="df -h"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- START row 5 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_5"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay5_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_5"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="echo -e '\e[32m'"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 6 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_6"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay6_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_6"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="grep [...]"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!-- START row 7 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_7"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay7_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_7"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="kill -l"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 8 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_8"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay8_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_8"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="ls -lsSh"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 9 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_9"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay9_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_9"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="lsof"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 10 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_10"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay10_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_10"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="man man"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 11 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_11"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay11_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_11"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="PS1=[...]"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 12 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_12"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay12_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_12"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="top"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 13 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_13"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay13_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_13"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="uname -a"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 14 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_14"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay14_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_14"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="w"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 15 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_15"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay15_dialog"
+
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_15"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="xdg-open"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- START row 16 -->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Cardlayout_16"
+
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:onClick="lay16_dialog"
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_16"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/linux_background_layouts"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:fontFamily="@font/aclonica"
+                            android:text="yes [...]"
+                            android:textColor="#008000"
+                            android:textSize="30sp"
+                            android:gravity="center" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+
+        <!-- END cardView -->
+
+    </LinearLayout>
+    <!-- END LinearLayout strongBackup -->
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBtnCmd">#000</color>
+    <color name="colorBtnPower">#053AB7</color>
+    <color name="colorBtnLinux">#000</color>
+    <color name="colorRipple">#fff</color>
+    <color name="colorLinuxDayText">#fff</color>
+    <color name="colorLinuxNightText">#008000</color>
+    <color name="colorPowerShellDayText">#fff</color>
+    <color name="colorPowerShellNightText">#053AB7</color>
+</resources>

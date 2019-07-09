@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.roby.commands123">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon3"
+        android:label="geek commands"
+        android:roundIcon="@mipmap/icon3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".cmd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".linux"
+            android:screenOrientation="portrait" />
+        <activity android:name=".powerShell"
+            android:screenOrientation="portrait"
+            />
+
+    </application>
+
+</manifest>
