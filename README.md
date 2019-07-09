@@ -1,5 +1,7 @@
 --- geek commands ---
+
 ### Android app ###
+***
 
 # <b><em>Fast</em></b> Demo #
 ![geek commands app](https://github.com/horjarobert/GeekCommands/blob/master/geek-commands.gif)
